@@ -35,5 +35,10 @@ button.addEventListener("click", () => {
   if (number <= x) {
     getProducts();
     number++;
+  } else {
+    let p = document.createElement("p");
+    p.textContent = "There are no more products";
+    p.style.color = "red";
+    document.body.appendChild(p);
   }
 });
